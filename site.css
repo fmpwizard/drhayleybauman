@@ -1,0 +1,11 @@
+.row{
+	background-color: #dde9ff;
+}
+.col-sm-12.jumbotron{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.jumbotron {
+	margin-bottom: 20px;
+	padding-bottom: 0px;
+}
