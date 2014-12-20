@@ -1,0 +1,10 @@
+RewriteEngine on
+#when people type www.hayleybauman.com or any other domain , send them to dr.hayleybauman.com
+RewriteCond %{HTTP_HOST}    ^www\.hayleybauman\.com$ [OR]
+RewriteCond %{HTTP_HOST}         ^hayleybauman\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.dr\.hayleybauman\.com$ [NC]
+RewriteRule (.*) http://dr.hayleybauman.com/$1 [R=301,L]
+
+RewriteEngine on
+RewriteRule ^(.+)\.php$ http://dr.hayleybauman.com/$1.html [R=301,L]
+
